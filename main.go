@@ -62,7 +62,7 @@ func checkoutBook(c *gin.Context){
 		return
 	}
 
-	book.Quantity -= 1				Reduce quantity//
+	book.Quantity -= 1				//Reduce quantity
 	c.IndentedJSON(http.StatusOK, book)
 }
 
